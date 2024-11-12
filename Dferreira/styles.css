@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.container {
+
+    display: flex;
+    background-color: rgba(241, 205, 0, 0.863);
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    font-family: Arial, sans-serif;
+    color: black;
+    width: auto;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 2004px;
+    background: linear-gradient(0deg, #FACD38 -26.61%, #947921 109.37%);
+    margin: 0px;
+    gap: 100px;
+    cursor: pointer;
+
+    img {
+        margin-right: 100px;
+        width: 7%;
+    }
+
+}
+.background-section {
+    background-image: url('Imagens/Fundo_Dferreira.jpeg');
+    background-size: cover;          
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1000px;    
+    width: 100%;               
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position:fixed;
+    padding: 0;
+    margin: 0;
+  }
+  
+
