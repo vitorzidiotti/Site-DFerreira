@@ -8,42 +8,73 @@
 .container {
 
     display: flex;
-    background-color: rgba(241, 205, 0, 0.863);
     align-items: center;
     justify-content: center;
-    padding: 18px;
     font-family: Arial, sans-serif;
+    font-size: x-large;
     color: black;
-    width: auto;
-    height: 80px;
+    width: 100%;
+    height: 500px;
     flex-shrink: 0;
-    border-radius: 2004px;
-    background: linear-gradient(0deg, #FACD38 -26.61%, #947921 109.37%);
-    margin: 0px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background: linear-gradient(0deg, #FACD38 0%, #947921 100%);
     gap: 100px;
-    cursor: pointer;
-
+    position:fixed;
+    top:-290px;
+    
     img {
         margin-right: 100px;
-        width: 7%;
+        max-width: 140px;
+    
+     
+    }
+    img,ul{
+
+      margin-bottom: -15%;
+
     }
 
 }
 .background-section {
-    background-image: url('Imagens/Fundo_Dferreira.jpeg');
+    background-image: url('Imagens/image.png');
     background-size: cover;          
     background-repeat: no-repeat;
     background-position: center;
-    height: 1000px;    
-    width: 100%;               
+    height:1500px;    
+    width: auto;               
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    position:fixed;
-    padding: 0;
-    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .Frase{
+
+    margin-bottom: 300px;
+    font-family: monospace;
+
+  }
+  .História{
+    background-color: rgb(98, 98, 100,0.5);
+    color: rgb(255, 255, 255);
+    width: 60%;
+    border-radius: 50px;
+    padding: 30px;
+    font-size: large;
+
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* para ficar na frente do container */
   }
   
 
