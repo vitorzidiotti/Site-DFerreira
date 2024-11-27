@@ -15,8 +15,6 @@
 }
 
 
-
-
 html,
 body {
   height: 100%;
@@ -24,8 +22,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-
-
 }
 
 .container {
@@ -51,7 +47,7 @@ body {
 
 .lista_menu {
   list-style: none;
-  display: flex;
+  display: none;
   gap: 20px;
 }
 
@@ -72,6 +68,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
   height: 1000px;
   display: flex;
   flex-direction: column;
@@ -84,7 +81,6 @@ body {
   h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
-
   }
 }
 
@@ -117,9 +113,10 @@ body {
 }
 
 .Segmentos img {
-  height: 200px;
-  max-width: 100%;
+  height: auto;
+  max-width: 300px;
   border-radius: 10%;
+  margin: 0 auto;
 }
 
 .Venda {
@@ -128,8 +125,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-
 }
 
 button {
@@ -170,9 +165,7 @@ button:hover {
   gap: 10px;
 
   img {
-
     border-radius: 50%;
-
   }
 }
 
@@ -222,7 +215,6 @@ footer {
   height: auto;
   padding: 20px;
   background: linear-gradient(0deg, #FACD38 0%, #947921 100%);
-
 }
 
 footer ul {
@@ -232,13 +224,16 @@ footer ul {
   gap: 50px;
   list-style-type: none;
   padding: 0;
+}
 
+footer a {
+  font-size: 25px;
 }
 
 footer li img {
   max-width: 50px;
   height: auto;
-
+  margin-top: 15px;
 }
 
 .convite {
@@ -248,17 +243,44 @@ footer li img {
   justify-content: right;
 }
 
-@media(max-width:400px) {
+/* medias */
 
-  .Segmentos,
-  .container {
+@media (max-width: 768px) {
+  .lista_menu.mostrar {
+    display: block;
+    position: absolute;
+    top: 100px;
+    background-color: #FACD38;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  /* exibir o menu hamburguer em dispositivos menores */
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: -50px;
+  }
 
+  .lista_menu li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .Segmentos, 
+  .Contatos {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
     gap: 0;
     width: 400px;
-
   }
 
   img {
@@ -266,4 +288,225 @@ footer li img {
     max-width: 200px;
   }
 
+  .background-section {
+    h4 {
+      font-size: 12px;
+    }
+  }
+  
+  .Frase {
+    margin-top: 110px;
+    margin-bottom: 50px;
+    padding: 1px;
+    font-size: 15px;
+  }
+  
+  .História {
+    width: 80%;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+
+  .Segmentos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .Segmentos img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .Venda {
+    font-size: 40px;
+  }
+
+  .Contatos {
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 70px;
+    margin-top: -90px;
+  }
+  
+  .Contatos #logo_wpp {
+    height: 40px;
+  }
+  
+  .Vendedor h4 {
+    font-size: 28px;
+  }
+
+  .FAQ {
+    width: 100%;
+    padding: 50px 20px;
+    margin-bottom: 100px;
+  }
+  
+  .FAQ h3 {
+    font-size: 1.8rem;
+  }
+  
+  .faq-item h4 {
+    font-size: 1.0rem;
+  }
+  
+  .faq-item p {
+    font-size: 0.8rem;
+  }
+
+  .convite {
+    font-size: 28px;
+  }
+
+  footer p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+  
+  footer .rodape ul {
+    list-style-type: none;
+  }
+
+  footer .rodape li {
+    margin: 0 -15px;
+  }
+  
+  footer li img {
+    max-width: 29px;
+    height: auto;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 965px){
+  .lista_menu {
+    font-size: 1.2rem;
+  }
+
+  .Segmentos {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .Segmentos img {
+    height: auto;
+    max-width: 145px;
+    border-radius: 10%;
+    margin: 0 auto;
+  }
+
+  .Venda {
+    font-size: 25px;
+  }
+
+  button {
+    font-size: 17px;
+  }
+
+  .Contatos {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  
+  .Contatos #logo_wpp {
+    height: auto;
+    width: 40px;
+  }
+  
+  .Vendedor {
+    img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  
+  .Vendedor h4 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  footer p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  footer li img {
+    max-width: 29px;
+    height: auto;
+  }
+}
+
+
+@media (min-width: 966px) and (max-width: 1550px){
+  .Segmentos {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .Segmentos img {
+    height: auto;
+    width: 200px;
+    border-radius: 10%;
+  }
+
+  .Venda {
+    font-size: 29px;
+  }
+
+  .Contatos {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  
+  .Contatos #logo_wpp {
+    height: auto;
+    width: 40px;
+  }
+  
+  .Vendedor {
+    img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  
+  .Vendedor h4 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  footer p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  footer li img {
+    max-width: 29px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .lista_menu {
+      display: flex;
+      gap: 20px;
+  }
+
+  /* ocultar o menu hamburguer em telas maiores */
+  .menu-toggle {
+      display: none;
+  }
 }
