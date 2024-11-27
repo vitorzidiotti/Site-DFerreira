@@ -5,113 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Site Inicial</title>
+    <link rel="icon" href="Imagens/Logo-DFerreira.png" type="image/x-icon">
+    <title>DFerreira</title>
 </head>
 
 
 <body>
+   <button id="backToTop" style="position: fixed; bottom: 10px; right: 10px; display: none; background:#381d1d; color: white; border: none; border-radius: 5px; padding: 10px; cursor: pointer;">
+    Volte ao topo
+</button>
 
-    <header class="header">
-        <nav>
-            <div class="container" id="mapadosite">
-                <img src="Imagens/Logo-DFerreira.png" alt="Logo">
-                <ul>Segmentos</ul>
-                <ul>História</ul>
-                <ul>Contatos</ul>
-                <ul>FAQ</ul>
+      
+    <div class="container">
+        <a href="#Frase"><img src="Imagens/Logo-DFerreira.png" alt="Logo"></a>
+        <ul class="lista_menu">
+            <li><a href="#História">HISTÓRIA</a></li>
+            <li><a href="#Segmentos">SEGMENTOS</a></li>
+            <li><a href="#Contatos">CONTATOS</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li> <button id="toggleTheme" style="position: fixed; top: 10px; right: 10px;">🌙</button></li>
+    
+        </ul>
+    </div>
 
-            </div>
-        </nav>
-    </header>
     <section class="background-section">
         <div class="Frase">
             <h1>
-                "Nossa empresa está no coração de Maringá, e quer ajudar você a ser gigante"
+                "Vocês fazem parte da nossa história"
             </h1>
+            <h4>"Deus seja louvado"</h4>
         </div>
-        <div class="História">
+
+        <div class="História" id="História">
             <h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem similique delectus aperiam. Dicta neque
-                reprehenderit, at nulla asperiores adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Rem similique delectus aperiam. Dicta neque
-                reprehenderit, at nulla asperiores adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Rem similique delectus aperiam. Dicta neque
-                reprehenderit, at nulla asperiores adipisci
+                A D.Ferreira começou a sua história no ano de 1997. Após ser demitido e ter 3 filhas o fundador
+                Denivaldo Ferreira
+                e sua esposa Marisa decidiram empreender.
+                Denivaldo já tinha o sonho de empreender e desde de pequeno trabalhava com vendas.
+                Então decidiram investir todo o acerto e dar inicio a DFerreira.
+                Denivaldo começou abrindo cliente com a venda a pronta entrega no região do norte pioneiro do Parana,
+                Marisa
+                auxiliava na parte fianceira, fiscal, e cuidava das filhas.
+                Foram alguns anos viajando e atendendo aos cientes com muita dedicação. Foram tempos difíceis de muita
+                renúncia
+                e muitos livramentos na estrada com assaltos acidentes, trapaças. Mas eles sabiam onde queriam chegar e
+                o sonho
+                de ter uma loja em Maringá o motivavam a não desistir e alcançar o objetivo.
+                Em dezembro de 2006 o sonho se realizou e inaugurou- se a Loja D. Ferreira em Maringá
+                nesses 18 anos trabalhamos para atender e satisfazer a necessidade do nosso cliente, buscando parcerias
+                com as melhores
+                marcas e ter os melhores preços.
             </h3>
         </div>
     </section>
-    <section class="Segmentos">
 
-        <div class="Serralheria">
-
-            <h4>Serralheria</h4>
+    <section class="Segmentos" id="Segmentos">
+        <div class="Venda">
+            <p>Serralheria</p>
             <img src="Imagens/Serralheria.webp" alt="Serralheria">
             <button>Saiba mais</button>
-
         </div>
 
-        <div class="Metalurgica">
-
-            <h4>Metalurgica</h4>
+        <div class="Venda">
+            <p>Metalurgica</p>
             <img src="Imagens/metalurgica.jpg" alt="Metalurgica">
             <button>Saiba mais</button>
-
         </div>
 
-        <div class="Ferramentas">
-
-            <h4>Ferramentas</h4>
+        <div class="Venda">
+            <p>Ferramentas</p>
             <img src="Imagens/ferramentas.jpg" alt="Ferramentas">
             <button>Saiba mais</button>
-
         </div>
 
-        <div class="Materiais">
-
-            <h4>Materiais</h4>
+        <div class="Venda">
+            <p>Materiais</p>
             <img src="Imagens/materiais.jpg" alt="Materiais">
             <button>Saiba mais</button>
-
         </div>
-
-
-
     </section>
-    <section class="Contatos">
-        <div class="Vendedor01">
 
+    <section class="Contatos" id="Contatos">
+        <div class="Vendedor">
             <h4>Jhonatan</h4>
-            <img src="" alt="Foto_Jhonatan">
-            <li><a href="https://w.app/t6gSmG" target="_blank"><img src="Imagens/Whatsapp.png" alt="WhatsApp"></a>
-
+            <img src="Imagens/Foto_Atendente.jpg" alt="Foto_Jhonatan">
+            <p>Especialiste em vendas nas cidades próximas de Maringá</p>
+            <li><a href="https://w.app/t6gSmG" target="_blank"><img id="logo_wpp" src="Imagens/Whatsapp.png"
+                        alt="WhatsApp"></a></li>
         </div>
 
-        <div class="Vendedor02">
-
+        <div class="Vendedor">
             <h4>Milena</h4>
-            <img src="" alt="Foto_Milena">
-            <li><a href="https://w.app/t6gSmG" target="_blank"><img src="Imagens/Whatsapp.png" alt="WhatsApp"></a>
-
+            <img src="Imagens/Foto_Atendente.jpg" alt="Foto_Milena">
+            <p>Especialista em vendas de Máquinas e Materiais</p>
+            <li><a href="https://w.app/t6gSmG" target="_blank"><img id="logo_wpp" src="Imagens/Whatsapp.png"
+                        alt="WhatsApp"></a></li>
         </div>
 
-        <div class="Vendedor03">
-
-            <h4>Emerson</h4>
-            <img src="" alt="Foto_Emerson">
-            <li><a href="https://w.app/t6gSmG" target="_blank"><img src="Imagens/Whatsapp.png" alt="WhatsApp"></a>
-
+        <div class="Vendedor">
+            <h4>Anderson</h4>
+            <img src="Imagens/Foto_Atendente.jpg" alt="Foto_Anderson">
+            <p>Especialista em vendas de ferramentas para Solda</p>
+            <li><a href="https://w.app/t6gSmG" target="_blank"><img id="logo_wpp" src="Imagens/Whatsapp.png"
+                        alt="WhatsApp"></a></li>
         </div>
 
-        <div class="Vendedor04">
-
-            <h4>Diego</h4>
-            <img src="" alt="Foto_Diego">
-            <li><a href="https://w.app/t6gSmG" target="_blank"><img src="Imagens/Whatsapp.png" alt="WhatsApp"></a>
-
+        <div class="Vendedor">
+            <h4>Elton</h4>
+            <img src="Imagens/Foto_Atendente.jpg" alt="Foto_Elton">
+            <p>Especialista em vendas de ferramentas para Serralheria</p>
+            <li><a href="https://w.app/t6gSmG" target="_blank"><img id="logo_wpp" src="Imagens/Whatsapp.png"
+                        alt="WhatsApp"></a></li>
         </div>
-
-
     </section>
+
+    <!-- Seção FAQ -->
+    <section id="FAQ" class="FAQ">
+        <h3>Perguntas Frequentes</h3>
+        <div class="faq-item">
+            <h4>1. Qual é o horário de funcionamento da empresa?</h4>
+            <p>Estamos abertos de segunda a sexta, das 8h às 18h.</p>
+        </div>
+        <div class="faq-item">
+            <h4>2. Como posso fazer um pedido?</h4>
+            <p>Entre em contato com um de nossos vendedores.</p>
+        </div>
+        <div class="faq-item">
+            <h4>3. Vocês entregam em toda região?</h4>
+            <p>Sim, realizamos entregas para toda região noroeste do estado do Paraná.</p>
+        </div>
+        <div class="faq-item">
+            <h4>4. Vocês conseguem atender pedidos em grande escala?</h4>
+            <p>Sim, podemos negociar quaisquer quantidade de máquinas, materiais, ferramentas e diversas outras coisas .
+            </p>
+        </div>
+    </section>
+
     <footer>
         <div class="convite">
             Conheça-nos através:
@@ -138,4 +167,5 @@
     </footer>
 </body>
 
+<script type="text/javascript" src="script.js"></script>
 </html>
