@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+
 #backToTop {
   font-size: 16px;
   z-index: 1000;
@@ -24,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  
+
 }
 
 .container {
@@ -107,7 +108,7 @@ body {
 
 .Segmentos {
   display: flex;
-  background-color: #6a5e29;
+  background: radial-gradient(194.01% 50% at 50% 50%, #2C388F 44%, #0D1029 100%);
   text-align: center;
   justify-content: center;
   gap: 50px;
@@ -118,7 +119,7 @@ body {
 .Segmentos img {
   height: 200px;
   max-width: 100%;
-  border-radius: 40%;
+  border-radius: 10%;
 }
 
 .Venda {
@@ -182,7 +183,7 @@ button:hover {
 
 .FAQ {
   padding: 50px;
-  background-color: #6a5e29;
+  background: radial-gradient(194.01% 50% at 50% 50%, #2C388F 44%, #0D1029 100%);
   border-radius: 15px;
   font-family: Arial, sans-serif;
   margin-bottom: 100px;
@@ -192,6 +193,7 @@ button:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  color:#000000;
 }
 
 .faq-item {
@@ -205,7 +207,7 @@ button:hover {
 
 .faq-item p {
   font-size: 1rem;
-  color: #000000;
+  color: #fff;
   margin-top: 5px;
 }
 
