@@ -176,7 +176,7 @@ button:hover {
 
 .FAQ {
   padding: 50px;
-  background: radial-gradient(194.01% 50% at 50% 50%, #2C388F 44%, #0D1029 100%);
+  background: radial-gradient(194.01% 50% at 50% 50%, #3b458f 44%, #101229 100%);
   border-radius: 15px;
   font-family: Arial, sans-serif;
   margin-bottom: 100px;
@@ -186,7 +186,7 @@ button:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
-  color:#000000;
+  color:#ffffff;
 }
 
 .faq-item {
@@ -195,12 +195,12 @@ button:hover {
 
 .faq-item h4 {
   font-size: 1.2rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .faq-item p {
   font-size: 1rem;
-  color: #fff;
+  color: #b9a7a7;
   margin-top: 5px;
 }
 
